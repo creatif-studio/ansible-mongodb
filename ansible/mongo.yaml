@@ -1,0 +1,6 @@
+---
+- name: mongodb app
+  hosts: mongodb-servers
+  become: yes
+  roles:
+    - mongodb

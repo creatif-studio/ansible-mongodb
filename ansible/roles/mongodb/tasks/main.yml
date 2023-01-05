@@ -1,0 +1,9 @@
+---
+# tasks file for ansible/roles/mongodb
+- name: install mongodb
+  apt: 
+    name: mongodb
+    state: present
+    update_cache: yes
+  notify:
+  - start mongodb

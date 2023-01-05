@@ -1,0 +1,10 @@
+[mongodb-servers]
+mongodb-01 ansible_host=192.168.56.11
+mongodb-02 ansible_host=192.168.56.12
+mongodb-03 ansible_host=192.168.56.13
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+
+ansible_user=vagrant
+ansible_ssh_private_key_file=/media/data/TechOps/task-01/vagrant-key-rsa
